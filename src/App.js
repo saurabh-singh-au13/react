@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <>
-      <h1 contentEditable='true' spellCheck="true"> What is your name ---</h1>
+      <h1 className="xyz" contentEditable='true' spellCheck="true"> What is your name ---</h1>
       <img src={img} alt="kuch"/>
       <a href="https://google.com/" target="_xyz"><img src={img1} alt="kuch"/> </a>
       
