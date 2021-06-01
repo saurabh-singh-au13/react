@@ -2,25 +2,34 @@ import './App.css';
 import React from "react"
 
 function App() {
-  const myStyle = {
-    color: "green",
-    fontSize:"50px"
+  let curDate = new Date();
+  curDate = curDate.getHours();
+  let greeting = '';
+  const cssStyle = { }
 
-  }
-  const myStyle1 = {
-    color: "tomato",
-    fontSize: "50px"
 
+  if(curDate >= 1 && curDate < 12 ) {
+    greeting = 'Good Morning'
+    cssStyle.color="tomato";
+
+  }else if( curDate >= 12 && curDate <= 17 ){
+    greeting = "Good Afternoon"
+    cssStyle.color="green";
+  }else if( curDate >= 17 && curDate <= 20 ){
+    greeting = "Good Evening"
+    cssStyle.color="blue";
+  }else{
+    greeting = "Good Night "
+    cssStyle.color="black";
   }
+
   return(
     
 
     <div className="App">
       <>
-      <h1 style={{color: "red", background:"black"}}> My name is Saurabh Kumar Singh </h1>
-      <h1 style={myStyle}> My name is Saurabh Kumar Singh lorem10
-      </h1>
-      <p contentEditable="true" style = {myStyle1}> Note: In JSX, JavaScript expressions are written inside curly braces, and since JavaScript objects also use curly braces, the styling in the example above is written inside two sets of curly braces.</p>
+      <h1 className="xyz"> Hello Saurabh,<span style={cssStyle}>{greeting} </span>  </h1>
+      
       </>
     </div>
   );
