@@ -1,18 +1,18 @@
 import './App.css';
 import React from "react"
-import Heading from './Heading';
-import Main from './Main';
-import Footer from './Footer'
+import Main from './greeting/Main.js'
+import Header from './greeting/Header'
+
 
 
 
 function App() {
   return(
       <>
-      <Heading />
+      <Header />
       <Main />
-      <Footer />
       </>
+     
   );
  
 };
