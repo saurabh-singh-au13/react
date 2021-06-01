@@ -1,7 +1,8 @@
 import './App.css';
 import React from "react"
-import Main from './greeting/Main.js'
-import Header from './greeting/Header'
+import Like from './Main1';
+import Main from './Main';
+
 
 
 
@@ -9,8 +10,9 @@ import Header from './greeting/Header'
 function App() {
   return(
       <>
-      <Header />
+      
       <Main />
+      <h2> What i Like is {Like}</h2>
       </>
      
   );
