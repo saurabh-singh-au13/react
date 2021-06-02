@@ -1,22 +1,14 @@
-import './App.css';
-import React from "react"
-import Like from './Main1';
-import Main from './Main';
-
-
-
+import React from 'react'
+import Calc from './calculator/Calc';
 
 
 function App() {
-  return(
-      <>
+  return (
+    <div>
+      <Calc />
       
-      <Main />
-      <h2> What i Like is {Like}</h2>
-      </>
-     
-  );
- 
-};
+    </div>
+  )
+}
 
-export default App;
+export default App
